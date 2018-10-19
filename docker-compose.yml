@@ -1,0 +1,9 @@
+version: '2'
+services:
+  webrick:
+    build: .
+    ports:
+      - 4567:4567
+    volumes:
+      - "./event:/web/event"
+    restart: always
